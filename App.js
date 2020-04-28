@@ -2,12 +2,11 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { FlatList } from "react-native-web";
 import Navbar from "./ui/Navbar";
+import TopBar from "./ui/TopBar";
 export default function App() {
   return (
     <View style={styles.container}>
-      <View>
-        <Text>Filter Control</Text>
-      </View>
+      <TopBar />
       <FlatList
         renderItem={({ item }) => (
           <Product name={item.name} price={item.price} />

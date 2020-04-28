@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Button, Image } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { TouchableHighlight } from "react-native-web";
 import palette from "./pallette";
 import PlusCircleIcon from "./icons/PlusCircleIcon";
