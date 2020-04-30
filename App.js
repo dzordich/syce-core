@@ -3,31 +3,22 @@ import { StyleSheet, Text, View } from "react-native";
 import { FlatList } from "react-native-web";
 import Navbar from "./ui/Navbar";
 import TopBar from "./ui/TopBar";
+import Product, { _mockProductApi } from "./ui/Product";
+
 export default function App() {
   return (
     <View style={styles.container}>
       <TopBar />
       <FlatList
         renderItem={({ item }) => (
-          <Product name={item.name} price={item.price} />
+          <Product img={require("./assets/jordan4.png")} product={item} />
         )}
-        data={_PRODUCTS}
-        keyExtractor={(item) => item.name}
+        data={_mockProductApi}
       />
       <Navbar />
     </View>
   );
 }
-
-const _PRODUCTS = [{ name: "jordan 4", price: 200 }];
-
-const Product = ({ name, price }) => (
-  <View>
-    <Text>
-      {name} | ${price}
-    </Text>
-  </View>
-);
 
 const styles = StyleSheet.create({
   container: {
