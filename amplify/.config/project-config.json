@@ -1,0 +1,17 @@
+{
+    "projectName": "sycecore",
+    "version": "3.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "react-native",
+        "config": {
+            "SourceDir": "~/Code/project_x/syce-core",
+            "DistributionDir": "~/Code/project_x/syce-core/dist",
+            "BuildCommand": "expo build",
+            "StartCommand": "npm run-script start"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}

@@ -32,7 +32,7 @@ const NavbarButton = ({ onPress, children }) => (
     underlayColor={palette.blue.light3}
     onPress={onPress}
   >
-    <View>{children}</View>
+    {children}
   </TouchableHighlight>
 );
 

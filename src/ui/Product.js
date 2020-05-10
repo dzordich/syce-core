@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import splash from "../assets/splash.png";
+import splash from "../../assets/splash.png";
 
 const productStyles = StyleSheet.create({
   card: { flex: -1, flexDirection: "column" },

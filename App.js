@@ -1,9 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { FlatList } from "react-native-web";
-import Navbar from "./ui/Navbar";
-import TopBar from "./ui/TopBar";
-import Product, { _mockProductApi } from "./ui/Product";
+import Navbar from "./src/ui/Navbar";
+import TopBar from "./src/ui/TopBar";
+import Product, { _mockProductApi } from "./src/ui/Product";
+import "./src/api/configure";
 
 export default function App() {
   return (
